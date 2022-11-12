@@ -1,10 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <SPA msg="Welcome to Your Vue.js App"/>
+  <HeaderComponent @click="changeComponent" :text='content'></HeaderComponent>
 </template>
 
 <script>
-import SPA from './components/HelloWorld.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
 
 export default {
   name: 'App',
